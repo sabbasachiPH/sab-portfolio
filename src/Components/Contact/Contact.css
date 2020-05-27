@@ -4,6 +4,7 @@
 }
 .form-group {
   display: flex;
+  flex-wrap: wrap;
 }
 .form-group label {
   flex: 1;
