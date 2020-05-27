@@ -2,21 +2,25 @@ import React from "react";
 import "./Contact.css";
 
 const ContactForm = () => {
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
+  /**
+   * <Form>
 
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+
+<input type="hidden" name="bot-field" />
+<input type="hidden" name="form-name" value="contact" />
+
+
+</Form>
+   */
   return (
     <>
       <form
-        action="POST"
-        name="sabContact"
+        method="POST"
+        name="contactform"
         data-netlify="true"
         className="contactForm"
       >
+        <input type="hidden" name="form-name" value="contactform" />
         <fieldset>
           <legend>GET IN TOUCH</legend>
           <div class="form-group">
@@ -60,16 +64,17 @@ const ContactForm = () => {
               id="message"
               name="message"
               placeholder="Write your message"
-            />
+            ></textarea>
           </div>
           <div class="form-group">
-            {/* <div data-netlify-recaptcha="true"></div> */}
-            <button className="btn btn-secondary" type="submit">
-              Send Message
-            </button>
+            <div data-netlify-recaptcha="true"></div>
+            <input
+              name="send"
+              className="btn btn-secondary"
+              type="submit"
+              value="Send to Us"
+            />
           </div>
-
-          {/* <input className="btn btn-secondary" type="submit" value="Send to Us" /> */}
         </fieldset>
       </form>
       {/* <form name="contactSab" netlify className="contactForm">
