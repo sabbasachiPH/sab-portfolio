@@ -10,7 +10,12 @@ const ContactForm = () => {
     document.getElementById("myForm").style.display = "none";
   }
   return (
-    <form name="contactForm" action="POST" data-netlify="true" className="contactForm">
+    <form
+      name="contactForm"
+      action="POST"
+      data-netlify="true"
+      className="contactForm"
+    >
       <fieldset>
         <legend>GET IN TOUCH</legend>
         <div class="form-group">
@@ -56,6 +61,7 @@ const ContactForm = () => {
             placeholder="Write your message"
           />
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <input className="btn btn-secondary" type="submit" value="Send to Us" />
       </fieldset>
     </form>
