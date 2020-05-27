@@ -11,11 +11,16 @@ const ContactForm = () => {
   }
   return (
     <>
-      <form action="POST" data-netlify="true" className="contactForm">
+      <form
+        action="POST"
+        name="sabContact"
+        data-netlify="true"
+        className="contactForm"
+      >
         <fieldset>
           <legend>GET IN TOUCH</legend>
           <div class="form-group">
-            <label for="fname">Name:</label>
+            <label for="name">Name:</label>
             <input
               className="form-control"
               type="text"
@@ -58,16 +63,16 @@ const ContactForm = () => {
             />
           </div>
           <div class="form-group">
-            <div data-netlify-recaptcha="true"></div>
+            {/* <div data-netlify-recaptcha="true"></div> */}
             <button className="btn btn-secondary" type="submit">
               Send Message
             </button>
           </div>
-          <br />
+
           {/* <input className="btn btn-secondary" type="submit" value="Send to Us" /> */}
         </fieldset>
       </form>
-      <form name="contact" netlify className="contactForm">
+      {/* <form name="contactSab" netlify className="contactForm">
         <p class="form-group">
           <label>
             Name <input type="text" name="name" />
@@ -86,7 +91,7 @@ const ContactForm = () => {
         <p class="form-group">
           <button type="submit">Send</button>
         </p>
-      </form>
+      </form> */}
     </>
   );
 };
