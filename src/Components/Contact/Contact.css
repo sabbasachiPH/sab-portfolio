@@ -1,6 +1,6 @@
 .contactForm {
   width: 35vw;
-  height: 65%;
+  height: 70%;
 }
 .form-group {
   display: flex;
@@ -11,4 +11,7 @@
 .form-group input,
 textarea {
   flex: 3;
+}
+button {
+  flex: 2;
 }

@@ -12,7 +12,7 @@ const Welcome = () => {
       <h3>Web Developer</h3>
       <a
         className="btn btn-primary"
-        href="./2.CV_WebDeveloper.pdf"
+        href={require("./2.CV_WebDeveloper.pdf")}
         download="sabbasachi CV"
       >
         My Resume
