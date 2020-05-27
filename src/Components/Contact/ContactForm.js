@@ -14,13 +14,9 @@ const ContactForm = () => {
    */
   return (
     <>
-      <form
-        method="POST"
-        name="contactform"
-        data-netlify="true"
-        className="contactForm"
-      >
+      <form name="contactform" method="POST" className="contactForm">
         <input type="hidden" name="form-name" value="contactform" />
+        {/* <input type="hidden" name="form-name" value="contact" /> */}
         <fieldset>
           <legend>GET IN TOUCH</legend>
           <div class="form-group">
