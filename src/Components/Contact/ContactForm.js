@@ -61,8 +61,15 @@ const ContactForm = () => {
             placeholder="Write your message"
           />
         </div>
-        <div data-netlify-recaptcha="true"></div>
+        <div class="form-group">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
         <input className="btn btn-secondary" type="submit" value="Send to Us" />
+        <p>
+          <button className="btn btn-secondary" type="submit">
+            Send
+          </button>
+        </p>
       </fieldset>
     </form>
   );
