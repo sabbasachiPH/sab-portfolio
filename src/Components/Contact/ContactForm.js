@@ -49,7 +49,7 @@ const ContactForm = () => {
               id="email"
               name="email"
               required
-              placeholder="First Name"
+              placeholder="mailaddress@mail.com"
             />
           </div>
           <div class="form-group">
