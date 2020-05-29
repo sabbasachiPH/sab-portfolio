@@ -42,10 +42,10 @@ img {
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   background: #be3144;
   width: 100%;
-  /*   position: fixed; */
   position: sticky;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@ img {
 }
 .nav-list {
   display: flex;
-  margin-right: 20px;
+  margin: 0px 20px;
 }
 .nav-list a {
   display: block;
@@ -110,12 +110,26 @@ img {
 .project-display {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 20px;
 }
 .card {
+  flex: 1;
+  margin: 10px;
+  padding: 5px;
+  box-sizing: border-box;
   flex-basis: 30%;
-  flex-wrap: wrap;
+}
+.card > img {
+  height: 50%;
+}
+.card-body {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 100%;
+  }
 }
 /* pro{
   display:flex;

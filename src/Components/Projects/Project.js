@@ -47,43 +47,14 @@ const Project = () => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <a href={project.siteLink} class="btn btn-secondary">
-          See Detais
-        </a>
       </div>
+      <a href={project.siteLink} class="btn btn-secondary">
+        Let's visit
+      </a>
     </div>
   ));
   return (
     <>
-      {/* <section id="projects" className="project-section">
-        <u>
-          <h2 className="project-title">These are some of my projects</h2>
-        </u>
-        <div className="projects">
-          {projects.map((project) => (
-            <div className="pro">
-              <a
-                href={project.siteLink}
-                target="_blank"
-                className="project project-tile"
-              >
-                <img
-                  className="project-pic"
-                  src={project.siteImg}
-                  alt="project"
-                />
-              </a>
-              <a
-                href={project.siteLink}
-                target="_blank"
-                className="project project-tile"
-              >
-                <h3>{project.title}</h3>
-              </a>
-            </div>
-          ))}
-        </div>
-      </section> */}
       <h2 className="project-title">These are some of my projects</h2>
       <section id="projects" className="project-display">
         {displayprojects}

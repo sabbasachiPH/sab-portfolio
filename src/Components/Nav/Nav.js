@@ -1,20 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <nav id="navbar" class="nav">
+      <h4 className="owner" style={{ color: "#fff" }}>
+        Sabbasachi
+      </h4>
       <ul class="nav-list">
         <li>
-          <a href="#welcome-section">About</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="https://medium.com/@sahasabbasachi">Blog</a>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>

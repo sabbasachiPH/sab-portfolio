@@ -1,3 +1,36 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background: #303841;
+  color: #fff;
+}
+.contact-section-header > p {
+  font-style: italic;
+}
+.contact-links-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-links-div > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+}
+.contact-link {
+  flex: 1;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-out;
+}
+.contact-link:hover {
+  transform: translateY(8px);
+}
+
 .contactForm {
   width: 35vw;
   height: 70%;
@@ -12,4 +45,37 @@
 .form-group input,
 textarea {
   flex: 3;
+}
+@media (max-width: 768px) {
+  .contactForm {
+    width: 85vw;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group > label {
+    display: none;
+  }
+}
+
+footer {
+  background: #303841;
+  border-top: 4px solid #be3144;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  color: #f0f0f0;
+}
+footer > p {
+  margin: 2rem;
+}
+footer i {
+  vertical-align: center;
+}
+@media (max-width: 450px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }

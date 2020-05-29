@@ -2,16 +2,6 @@ import React from "react";
 import "./Contact.css";
 
 const ContactForm = () => {
-  /**
-   * <Form>
-
-
-<input type="hidden" name="bot-field" />
-<input type="hidden" name="form-name" value="contact" />
-
-
-</Form>
-   */
   return (
     <>
       <form name="contactform" method="POST" className="contactForm">
