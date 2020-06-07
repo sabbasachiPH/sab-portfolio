@@ -1,6 +1,6 @@
 <h1> This is my personal portfolio website.</h1>
 
-In this porject I am using the 
+<h3> In this porject I am using the </h3>
   * react.js
   * Bootstrap
   * Netlify forms
