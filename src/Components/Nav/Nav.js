@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Nav.css";
 
 const Nav = () => {
   return (
-    <nav id="navbar" class="nav">
+    <nav id="navbar" className="nav justify-content-around" activeKey="/home">
       <h4 className="owner" style={{ color: "#fff" }}>
         Sabbasachi
       </h4>
-      <ul class="nav-list">
+      <ul class="nav-list ">
         <li>
           <Link to="/">Home</Link>
         </li>

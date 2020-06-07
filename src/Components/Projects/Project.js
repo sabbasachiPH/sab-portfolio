@@ -49,7 +49,7 @@ const Project = () => {
         </p>
       </div>
       <a href={project.siteLink} class="btn btn-secondary">
-        Let's visit
+        Let's visit our project
       </a>
     </div>
   ));
