@@ -28,7 +28,7 @@ const allProjects = [
   },
   {
     title: "Biography",
-    siteLink: "https://codepen.io/sabbasachi-saha/pen/gZGOEr",
+    siteLink: "https://codepen.io/sabbasachi-saha/full/gZGOEr",
     siteImg:
       "https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png",
   },
@@ -39,7 +39,7 @@ const Project = () => {
 
   const displayprojects = projects.map((project) => (
     // <div class="card " style={{ width: "20rem" }}>
-    <div class="card ">
+    <div class="card singleProject ">
       <img src={project.siteImg} class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">{project.title}</h5>
@@ -48,7 +48,7 @@ const Project = () => {
           bulk of the card's content.
         </p>
       </div>
-      <a href={project.siteLink} class="btn btn-secondary">
+      <a href={project.siteLink} target="_blank" class="btn btn-secondary">
         Let's visit our project
       </a>
     </div>

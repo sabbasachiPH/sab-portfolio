@@ -1,6 +1,9 @@
 .nav {
   background: #be3144;
 }
+.navbar {
+  padding: 0rem 1rem;
+}
 .nav-list a {
   display: block;
   text-decoration: none;

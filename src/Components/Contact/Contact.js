@@ -34,7 +34,7 @@ const Contact = () => {
       <div class="contact-links-div">
         {contacts.map(({ contactTitle, contactIcon, contactLink }) => (
           <a
-            href="https://www.linkedin.com/in/sabbasachi-saha/"
+            href={contactLink}
             target="_blank"
             id="profile-link"
             class="contact-link"
