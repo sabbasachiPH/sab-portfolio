@@ -45,7 +45,6 @@ img {
   height: 100vh;
   width: 100%;
   color: #fff;
-  /*   margin-top: 30px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +59,6 @@ img {
 .project-section {
   display: flex;
   flex-direction: column;
-  /* background: var(--main-blue) */
 }
 
 .projects {
@@ -72,9 +70,7 @@ img {
   justify-items: center;
   align-items: center;
 }
-/*
-*Project display
-*/
+/*************** Project display **************/
 .project-display {
   display: flex;
   flex-wrap: wrap;
@@ -103,12 +99,7 @@ img {
     flex-basis: 100%;
   }
 }
-/* pro{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
+
 .contact-section {
   display: flex;
   flex-direction: column;
