@@ -11,7 +11,6 @@ function App() {
     <>
       <Router>
         <Nav2 />
-        {/* <Nav /> */}
         <MyRoute />
       </Router>
     </>
